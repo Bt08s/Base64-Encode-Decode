@@ -37,15 +37,13 @@ def decode_text(text, count):
 
 
 with dpg.window(tag="Coder window"):
-    def encode(sender):
-        print(sender)
+    def encode():
         text = dpg.get_value("text")
         count = int(dpg.get_value("count"))
         encoded_text = encode_text(text, count)
         dpg.set_value("output", encoded_text)
 
-    def decode(sender):
-        print(sender)
+    def decode():
         text = dpg.get_value("text")
         count = int(dpg.get_value("count"))
         decoded_text = decode_text(text, count)
