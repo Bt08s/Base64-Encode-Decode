@@ -7,7 +7,6 @@ dpg.create_context()
 def encode_text(text, count):
     if not text:
         return None
-
     if not count:
         count = 1
 
@@ -22,7 +21,6 @@ def encode_text(text, count):
 def decode_text(text, count):
     if not text:
         return None
-
     if not count:
         count = 1
 
