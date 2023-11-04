@@ -5,8 +5,11 @@ dpg.create_context()
 
 
 def encode_text(text, count):
-    if not text or not count:
+    if not text:
         return None
+
+    if not count:
+        count = 1
 
     # Encode the text count times
     encoded_text = text.encode('utf-8')
@@ -17,8 +20,11 @@ def encode_text(text, count):
 
 
 def decode_text(text, count):
-    if not text or not count:
+    if not text:
         return None
+
+    if not count:
+        count = 1
 
     # Decode the text count times
     decoded_text = text.encode('utf-8')
