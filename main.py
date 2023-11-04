@@ -58,7 +58,7 @@ with dpg.window(tag="Primary Window"):
     dpg.add_button(label="Decode", callback=decode, width=314)
     dpg.add_input_text(label="Output", tag="output", readonly=True, multiline=True)
 
-dpg.create_viewport(title='Advanced Base64 UTF-8 encoder/decoder by Bt08', width=500, height=300)
+dpg.create_viewport(title='Advanced Base64 UTF-8 encoder/decoder by Bt08s', width=500, height=300)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 dpg.set_primary_window("Primary Window", True)
