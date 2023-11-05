@@ -60,6 +60,19 @@ with dpg.window(tag="Coder window"):
     dpg.add_button(label="Encode", callback=encode, width=100)
     dpg.add_button(label="Decode", callback=decode, width=100)
 
+# MacOS Theme
+with dpg.theme() as global_theme:
+    with dpg.theme_component(dpg.mvAll):
+        dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 3)
+        dpg.add_theme_style(dpg.mvNodeStyleVar_NodeCornerRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 3)
+
+dpg.bind_theme(global_theme)
 dpg.create_viewport(title='Advanced Base64 UTF-8 encoder/decoder by Bt08s', width=500, height=300)
 dpg.setup_dearpygui()
 dpg.show_viewport()
