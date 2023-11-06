@@ -11,7 +11,7 @@ def encode_text(text, count):
     if not count:
         count = 1
 
-    # Encode the text count times
+    # Number of the time to encode the text
     encoded_text = text.encode('utf-8')
     for _ in range(count):
         try:
