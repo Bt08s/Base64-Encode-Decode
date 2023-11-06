@@ -63,10 +63,10 @@ with dpg.window(tag="Coder window"):
 
 
     dpg.add_input_text(label="Text", tag="text")
-    with dpg.popup(dpg.last_item()):
+    with dpg.tooltip(dpg.last_item()):
         dpg.add_text("Text to process")
     dpg.add_input_text(label="Count", tag="count")
-    with dpg.popup(dpg.last_item()):
+    with dpg.tooltip(dpg.last_item()):
         dpg.add_text("Number of times to process")
 
     dpg.add_input_text(label="Output", tag="output", readonly=True)
