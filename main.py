@@ -70,7 +70,7 @@ with dpg.window(tag="Coder window"):
         dpg.add_text("Number of times to process")
 
     dpg.add_input_text(label="Output", tag="output", readonly=True)
-    dpg.add_spacing(count=3)
+    dpg.add_spacer(parent=3)
     dpg.add_button(label="Encode", callback=encode, width=100)
     dpg.add_button(label="Decode", callback=decode, width=100)
     dpg.add_button(label="Copy", callback=lambda: clipboard.copy(dpg.get_value("output")), width=100)
